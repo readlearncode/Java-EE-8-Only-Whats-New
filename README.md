@@ -1,5 +1,5 @@
 # Java EE 8: Only What's New
-Code repository for [Java EE 8: Only What's New](https://leanpub.com/javaee8)
+Code repository for the book [Java EE 8: Only What's New](https://leanpub.com/javaee8)
 
 Java EE 8: Only What's New. Includes all new and updated APIs with working code examples: 
 
