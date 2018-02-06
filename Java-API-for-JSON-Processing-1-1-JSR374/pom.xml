@@ -14,5 +14,19 @@
     </parent>
 
     <name>Java-API-for-JSON-Processing-1-1-JSR374</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>javax.json</groupId>
+            <artifactId>javax.json-api</artifactId>
+            <version>1.1.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.glassfish</groupId>
+            <artifactId>javax.json</artifactId>
+            <version>1.1.2</version>
+        </dependency>
+    </dependencies>
     
 </project>

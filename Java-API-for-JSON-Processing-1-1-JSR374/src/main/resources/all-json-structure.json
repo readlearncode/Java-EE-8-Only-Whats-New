@@ -1,0 +1,21 @@
+{
+  "title": "Java EE: Only What's New",
+  "author": "Alex Theedom",
+  "chapters": [
+    "Chapter 1: Java EE 8 What’s New Overview",
+    "Chapter 2: Java API for JSON Binding 1.0 (JSR 367)",
+    "Chapter 3: Java EE Security API 1.0 (JSR 375)"
+  ],
+  "released": true,
+  "pages": 300,
+  "sourceCode": {
+    "repositoryName": "Java-EE-8-Only-Whats-New",
+    "url": "github.com/readlearncode/"
+  },
+  "otherBooks": [
+    {
+      "title": "Professional Java EE Design Patterns",
+      "length": 350
+    }
+  ]
+}

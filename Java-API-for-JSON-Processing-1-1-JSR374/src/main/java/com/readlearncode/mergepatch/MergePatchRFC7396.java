@@ -23,6 +23,7 @@ public class MergePatchRFC7396 {
 
         /*
 
+        Result:
         {
           "title": "Hello!",
           "phoneNumber": "+01-123-456-7890",
@@ -35,7 +36,6 @@ public class MergePatchRFC7396 {
         }
 
         Should be:
-
        {
          "title": "Hello!",
          "author" : {
@@ -47,6 +47,14 @@ public class MergePatchRFC7396 {
        }
 
          */
+
+
+
+
+        JsonValue target = Json.createValue("{\"title\":\"Hello!\",\"author\":{\"givenName\":\"John\"},\"tags\":[\"example\"],\"content\":\"This will be unchanged\",\"phoneNumber\":\"+01-123-456-7890\"}");
+        jsonMergePatch = Json.createMergeDiff(source, target);
+        System.out.println(jsonMergePatch.toJsonValue());
+
 
     }
 
