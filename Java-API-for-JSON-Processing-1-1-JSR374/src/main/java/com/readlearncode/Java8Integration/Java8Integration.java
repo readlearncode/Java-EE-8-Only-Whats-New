@@ -1,4 +1,4 @@
-package com.readlearncode;
+package com.readlearncode.Java8Integration;
 
 import javax.json.Json;
 import javax.json.JsonArray;
