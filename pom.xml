@@ -50,6 +50,7 @@
         <module>Java-API-for-JSON-Processing-1-1-JSR374</module>
         <module>Bean-Validation-2-0-JSR380</module>
         <module>Java-API-for-RESTful-WebServices-2-1-JSR370</module>
+        <module>Contexts-and-Dependency-Injection-for-Java-2-0-JSR365</module>
     </modules>
 
     <build>
