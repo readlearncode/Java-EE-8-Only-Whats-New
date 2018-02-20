@@ -51,6 +51,7 @@
         <module>Bean-Validation-2-0-JSR380</module>
         <module>Java-API-for-RESTful-WebServices-2-1-JSR370</module>
         <module>Contexts-and-Dependency-Injection-for-Java-2-0-JSR365</module>
+        <module>Java-Servlet-4-0-Specification-JSR369</module>
     </modules>
 
     <build>
