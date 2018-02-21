@@ -52,6 +52,7 @@
         <module>Java-API-for-RESTful-WebServices-2-1-JSR370</module>
         <module>Contexts-and-Dependency-Injection-for-Java-2-0-JSR365</module>
         <module>Java-Servlet-4-0-Specification-JSR369</module>
+        <module>JavaServer-Faces-Specification-2-3-JSR372</module>
     </modules>
 
     <build>
