@@ -53,6 +53,7 @@
         <module>Contexts-and-Dependency-Injection-for-Java-2-0-JSR365</module>
         <module>Java-Servlet-4-0-Specification-JSR369</module>
         <module>JavaServer-Faces-Specification-2-3-JSR372</module>
+        <module>Java-Persistence-API-2-2-JSR338</module>
     </modules>
 
     <build>
@@ -71,7 +72,7 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.2.0</version>
                 <configuration>
-                    <warName>java-ee-8-sampler</warName>
+                    <warName>java-ee-8-only-whats-new</warName>
                 </configuration>
             </plugin>
         </plugins>
