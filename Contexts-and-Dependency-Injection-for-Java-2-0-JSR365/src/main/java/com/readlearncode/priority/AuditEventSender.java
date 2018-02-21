@@ -25,8 +25,7 @@ public class AuditEventSender {
 
     @PostConstruct
     public void send() {
-        event..fire(new AuditEvent("Security Violation", HIGH));
+        event.fire(new AuditEvent("Security Violation", HIGH));
     }
-
 
 }
