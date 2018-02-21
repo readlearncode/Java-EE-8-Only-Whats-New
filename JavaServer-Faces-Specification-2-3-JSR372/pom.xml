@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>JavaServer-Faces-Specification-2-3-JSR372</artifactId>
-
+    <packaging>war</packaging>
 
     <dependencies>
         <dependency>
