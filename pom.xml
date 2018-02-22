@@ -55,6 +55,7 @@
         <module>JavaServer-Faces-Specification-2-3-JSR372</module>
         <module>Java-Persistence-API-2-2-JSR338</module>
         <module>Java-API-for-JSON-Binding-1-0-JSR367</module>
+        <module>Java-EE-Security-API-JSR375</module>
     </modules>
 
     <build>
