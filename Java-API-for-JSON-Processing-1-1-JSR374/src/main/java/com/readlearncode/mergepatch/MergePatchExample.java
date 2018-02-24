@@ -12,6 +12,7 @@ public class MergePatchExample {
 
     public static void main(String... args) {
 
+
         JsonValue source;
         JsonValue patch;
         JsonMergePatch jsonMergePatch;
@@ -46,15 +47,16 @@ public class MergePatchExample {
         source = Json.createValue("{\"colour\":\"blue\"}");
         JsonValue target = Json.createValue("{\"colour\":\"red\"}");
         jsonMergePatch = Json.createMergeDiff(source, target);
+        jsonValue = jsonMergePatch.apply(source);
         System.out.println(jsonMergePatch.toJsonValue());
+        System.out.println(jsonValue);
 
 
         // Create Diff
-        JsonStructure source1 = Json.createObjectBuilder().add("colour","blue").build();
-        JsonStructure target1 = Json.createObjectBuilder().add("colour","red").build();
+        JsonStructure source1 = Json.createObjectBuilder().add("colour", "blue").build();
+        JsonStructure target1 = Json.createObjectBuilder().add("colour", "red").build();
         JsonPatch jsonPatch = Json.createDiff(source1, target1);
         System.out.println(jsonPatch.toJsonArray());
-
 
 
     }
