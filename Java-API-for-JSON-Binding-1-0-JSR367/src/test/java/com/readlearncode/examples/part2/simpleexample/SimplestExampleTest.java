@@ -2,7 +2,10 @@ package com.readlearncode.examples.part2.simpleexample;
 
 import org.junit.Test;
 
+import javax.json.bind.Jsonb;
 import javax.json.bind.JsonbBuilder;
+import javax.json.bind.JsonbConfig;
+import javax.json.bind.config.PropertyNamingStrategy;
 
 import static org.assertj.core.api.Java6Assertions.assertThat;
 
@@ -33,7 +36,7 @@ public class SimplestExampleTest {
     }
 
     @Test
-    public void givenBookJson_shouldDeserialiseToBookObject(){
+    public void givenBookJson_shouldDeserialiseToBookObject() {
 
         Book expectedBook = new Book();
         expectedBook.title = "Fun with Java";
@@ -43,6 +46,10 @@ public class SimplestExampleTest {
         Book actualBook = JsonbBuilder.create().fromJson(json, Book.class);
 
         assertThat(actualBook.title).isEqualTo(expectedBook.title);
+
+
+
+
 
     }
 

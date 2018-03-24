@@ -1,5 +1,9 @@
 package com.readlearncode;
 
+import javax.json.bind.Jsonb;
+import javax.json.bind.JsonbBuilder;
+import javax.json.bind.JsonbConfig;
+import javax.json.bind.config.PropertyNamingStrategy;
 import java.io.FileNotFoundException;
 
 /**
@@ -11,6 +15,17 @@ import java.io.FileNotFoundException;
 public class Questions {
 
     public static void main(String... args) throws FileNotFoundException {
+
+
+        JsonbConfig jsonbConfig = new JsonbConfig()
+                .withPropertyNamingStrategy(
+                        PropertyNamingStrategy.LOWER_CASE_WITH_DASHES)
+                .withNullValues(true)
+                .withFormatting(true);
+
+        Jsonb jsonb = JsonbBuilder.create(jsonbConfig);
+
+
 
         /*
 
