@@ -9,8 +9,9 @@ Includes all new and updated APIs with working code examples:
 - Bean Validation 2.0
 - CDI 2.0
 - JAX-RS 2.1
-- JSF 2.3 and 
-- JSON Processing 1.1. 
+- JSF 2.3 
+- JSON Processing 1.1 and
+- Java Persistence 2.2.
 
 This book covers only what's new, so you won't waste time reading what you already know, only what you don't.
 
