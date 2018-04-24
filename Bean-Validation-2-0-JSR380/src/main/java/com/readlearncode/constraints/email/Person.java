@@ -14,7 +14,7 @@ public class Person {
 
     private String secondName;
 
-    @Email(regexp = ".*com # Allow only .com emails")
+    @Email(regexp = ".*com")
     private String email;
 
     public String getFirstName() {
