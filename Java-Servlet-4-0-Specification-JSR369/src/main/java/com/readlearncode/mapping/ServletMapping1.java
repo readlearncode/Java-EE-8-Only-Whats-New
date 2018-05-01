@@ -14,7 +14,7 @@ import java.io.IOException;
  * @version 1.0
  */
 @WebServlet({"/location/*", "*.ext"})
-public class ServletMapping extends HttpServlet {
+public class ServletMapping1 extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         HttpServletMapping servletMapping = request.getHttpServletMapping();

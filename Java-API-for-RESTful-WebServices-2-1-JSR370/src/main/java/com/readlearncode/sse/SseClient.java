@@ -18,6 +18,20 @@ public class SseClient {
     public static void main(String[] args) {
         target = ClientBuilder.newClient().target(args[0]);
         consumeEventsViaSubscription();
+
+
+
+
+        WebTarget target = ClientBuilder.newClient()
+                .target("http://localhost:8080/jax-rs-2-1/sse/");
+
+        try (SseEventSource source = SseEventSource
+                .target(target).build()) {
+            source.register(System.out::println);
+            source.open();
+        }
+
+
     }
 
     private static void consumeEventsViaSubscription() {

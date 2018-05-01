@@ -9,17 +9,18 @@ import java.io.IOException;
 
 /**
  * A simple POC use of the Server Push feature.
- *
+ * <p>
  * Source code github.com/readlearncode
  *
  * @author Alex Theedom www.readlearncode.com
  * @version 1.0
  */
 @WebServlet("/duke")
-public class SimplestExample extends HttpServlet {
+public class SimplestExample1 extends HttpServlet {
 
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
 
         request.newPushBuilder()
                 .path("resources/images/java-ee-logo.png")

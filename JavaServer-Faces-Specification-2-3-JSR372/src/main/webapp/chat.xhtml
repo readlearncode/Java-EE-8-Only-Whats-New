@@ -23,7 +23,8 @@
         </h:form>
 
         <script type="text/javascript">
-            function wsListener(message, channel, event) {
+
+        function wsListener(message, channel, event) {
                 var chatWindow = document.getElementById('chatWindow');
                 var historicChat = chatWindow.value;
                 if (historicChat.trim() !== '') {
