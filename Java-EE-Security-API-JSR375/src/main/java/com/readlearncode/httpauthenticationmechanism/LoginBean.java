@@ -25,7 +25,7 @@ import static javax.security.enterprise.authentication.mechanism.http.Authentica
 @Named
 @RequestScoped
 public class LoginBean {
-    
+
     @Inject
     private SecurityContext securityContext;
 
@@ -35,56 +35,40 @@ public class LoginBean {
     private String username, password;
     
     public void login() {
-        
+
         Credential credential = new UsernamePasswordCredential(username, new Password(password));
-        
+
         AuthenticationStatus status = securityContext.authenticate(
             getRequestFrom(facesContext),
             getResponseFrom(facesContext),
             withParams().credential(credential));
-        
+
         if (status.equals(SEND_CONTINUE)) {
             facesContext.responseComplete();
         } else if (status.equals(SEND_FAILURE)) {
             addError(facesContext, "Authentication failed");
         }
-        
+
     }
-    
+
     private static HttpServletResponse getResponseFrom(FacesContext context) {
         return (HttpServletResponse) context
             .getExternalContext()
             .getResponse();
     }
-    
+
     private static HttpServletRequest getRequestFrom(FacesContext context) {
         return (HttpServletRequest) context
             .getExternalContext()
             .getRequest();
     }
-    
+
     private static void addError(FacesContext context, String message) {
         context
             .addMessage(
-                null, 
+                null,
                 new FacesMessage(SEVERITY_ERROR, message, null));
     }
 
-    
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
 
 }

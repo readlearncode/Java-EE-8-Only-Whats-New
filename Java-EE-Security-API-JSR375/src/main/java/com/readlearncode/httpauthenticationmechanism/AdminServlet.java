@@ -16,7 +16,8 @@ import javax.servlet.http.HttpServlet;
  */
 @CustomFormAuthenticationMechanismDefinition(
         loginToContinue = @LoginToContinue(
-                loginPage = "/login.do"
+                loginPage = "/login.do",
+                errorPage = "/error.do"
         )
 )
 @WebServlet("/admin")
@@ -24,6 +25,6 @@ import javax.servlet.http.HttpServlet;
 @ServletSecurity(@HttpConstraint(rolesAllowed = "admin"))
 public class AdminServlet extends HttpServlet {
 
-        // Servlet Code
+    // Servlet Code
 
 }
