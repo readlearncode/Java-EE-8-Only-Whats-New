@@ -40,7 +40,7 @@ public class PersonTest {
         person.setEmail("alex.theedom@example");
 
         Set<ConstraintViolation<Person>> constraintViolations = validator.validate(person);
-        assertThat(constraintViolations.size()).isEqualTo(0);
+        assertThat(constraintViolations.size()).isEqualTo(1);
     }
 
 }

@@ -8,6 +8,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
+import java.util.TimeZone;
 
 import static org.assertj.core.api.Java6Assertions.assertThat;
 
@@ -24,6 +25,7 @@ public class DateTimeExampleTest {
     @Test
     public void givenDate_shouldParseAndSerialise() throws ParseException {
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        sdf.setTimeZone(TimeZone.getTimeZone("UTC"));
         Date date = sdf.parse("25/12/2018");
         String json = jsonb.toJson(date);
 

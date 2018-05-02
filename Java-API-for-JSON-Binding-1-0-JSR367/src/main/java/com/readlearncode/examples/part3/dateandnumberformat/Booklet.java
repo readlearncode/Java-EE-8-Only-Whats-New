@@ -17,7 +17,7 @@ public class Booklet {
 
     private Author author;
 
-    @JsonbNumberFormat("#.00")
+    @JsonbNumberFormat(value = "#.00", locale = "UTC")
     private double price;
 
     public Booklet(String title, String firstName, String lastName, double price) {

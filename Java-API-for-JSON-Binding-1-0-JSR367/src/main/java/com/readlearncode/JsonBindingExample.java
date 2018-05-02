@@ -63,15 +63,15 @@ public class JsonBindingExample extends JsonData {
     }
 
     public String annotationPropertiesMapping() {
-        return JsonbBuilder.create().toJson(magazine);
+        return JsonbBuilder.create(getJsonbConfig()).toJson(magazine);
     }
 
     public String annotationMethodMapping() {
-        return JsonbBuilder.create().toJson(newspaper);
+        return JsonbBuilder.create(getJsonbConfig()).toJson(newspaper);
     }
 
     public String annotationPropertyAndMethodMapping() {
-        return JsonbBuilder.create().toJson(booklet);
+        return JsonbBuilder.create(getJsonbConfig()).toJson(booklet);
     }
 
     public String bookAdapterToJson() {
@@ -120,5 +120,9 @@ public class JsonBindingExample extends JsonData {
         Jsonb jsonb = JsonbBuilder.create(jsonbConfig);
 
         return jsonb.toJson(book1);
+    }
+
+    private JsonbConfig getJsonbConfig() {
+        return new JsonbConfig().withLocale(Locale.ENGLISH);
     }
 }
